@@ -1,0 +1,11 @@
+Initialize_Single_Source(G,s)
+for each vertex V E G.V
+    v.d <- inifite
+    v.pre <- Nil
+s.d <- 0
+
+
+Relax(u,v,w)
+    if v.d > u.d + w(u,v)
+        then v.d <- u.d + w(u,v)
+             v.pre <- u

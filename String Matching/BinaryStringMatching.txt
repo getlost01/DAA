@@ -1,0 +1,12 @@
+Binary_String_Matching(T,P,i,f)
+n <- length[T]
+m <- length[P]
+
+for s<-0 to n-m
+    do if P[1] == T[s+1]
+        then if P[m] == T[s+m]
+            then if P[m/2] == T[s+m/2]
+                then Binary_String_Matching(T,P,i,((i+f)/2-1)) 
+                     Binary_String_Matching(T,P,((i+f)/2+1),f)
+
+//Time complexity: O(m + log n) 

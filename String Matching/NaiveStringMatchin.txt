@@ -1,0 +1,9 @@
+NaiveStringMatchin(T,P)
+n <- length[T]
+m <- length[P]
+
+for s<-0 to n-m
+    then if p[1 ... m] == T[s+1 ... s+m]
+            then print "pattern occurs at shift s"
+
+//Time complexity: O((n-m+1)m) 

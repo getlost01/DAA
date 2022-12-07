@@ -1,0 +1,11 @@
+Dijkstra(G,W,s)
+Initialize_Single_Source(G,s)
+S <- Nil
+Q <- G.V 
+While Q != Nil
+    u <- Extract_Min(Q)
+    S = S U {u}
+    for each vertex v E G.Adj[u]
+        Relax(u,v,w)
+
+//Time complexity: O() 
