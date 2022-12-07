@@ -1,0 +1,13 @@
+MST-Prims(G,W,r)
+for each v E G.V 
+    v.key <- infinite
+    v.pre <- nil
+r.key <- O
+Q <- G.V
+while Q != Nil
+    u <- Extract_Min(Q)
+    for each v E Adj|u|
+        if v E Q and W(u,v) > v.key
+            v.key <- W(u,v)
+            v.pre <- u
+

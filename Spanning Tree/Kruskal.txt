@@ -1,0 +1,10 @@
+Kruskal(G,W)
+A <- Nil
+for each v E G.V 
+    Make_Set(v)
+// Sort all edge of G.E into non-decreaing order to their weight.
+for each edge (u,v) E G.V, taken in non decreaing order
+    if Find_Set(u) != Find_Set(v)
+    A = A U {(u,v)}
+    Union(u,v)
+return A
