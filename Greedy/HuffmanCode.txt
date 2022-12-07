@@ -1,0 +1,10 @@
+Huffman(C)
+n = |C|
+Q = C
+for i <- 0 to n-1
+    allocate new node z
+    z.left = x = Extract-Min(Q)
+    Z.RIGHT = Y = Extract_Min(Q)
+    z.freq = x.freq + y.freq
+    Insert(Q.z)
+return Extract-Min(Q)

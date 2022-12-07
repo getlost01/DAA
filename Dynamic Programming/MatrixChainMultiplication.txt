@@ -1,0 +1,16 @@
+Matrix_Chain_Multiplication(P)
+n = p.length -1
+let m[1 ... n, 1 ... n] and s[1 ... n-1 , 2 ... n] be the new table
+for i <- 0 to n
+    m[i,i ] <- 0 
+for l<-2 to n
+    for i<-1 to n-l+1
+        j = l+i -1
+        m[i,j] = infinite
+        for k = i to j
+            q = m[i,k] + m[k,j] + pi-1*pk*pj
+            if q < m[i,j]
+            m[i,j] = q 
+            s[i,j] = k
+return m and s
+

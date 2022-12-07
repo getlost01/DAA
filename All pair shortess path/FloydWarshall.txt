@@ -5,7 +5,7 @@ for k <- 1 to n
     let D(k) = dij(k) be a new nXn matrix
     for i <- 1 to n
         for j<-1 to n
-            dij(k) = min(dij(k-1),fik(k-1)+fkj(k-1))
+            dij(k) = min(dij(k-1),dik(k-1)+fkj(k-1))
 return D(n)
 
 // Time complexity: O(n^3)
