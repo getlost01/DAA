@@ -1,0 +1,9 @@
+Approx-Vertex-Cover (G=(V, E))               
+    C = empty-set  
+    E'= E  
+    While E' is not empty do  
+        Let (u, v) be any edge in E': (*)  
+        Add u and v to C  
+        Remove from E' all edges incident to  
+        u or v  
+    return C

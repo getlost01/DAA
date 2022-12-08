@@ -1,0 +1,5 @@
+Approx-TSP (G= (V, E))   
+   Compute a MST T of G
+   Select any vertex r is the root of the tree
+   Let L be the list of vertices visited in a preorder tree walk of T
+   Return the Hamiltonian cycle H that visits the vertices in the order L

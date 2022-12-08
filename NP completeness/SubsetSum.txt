@@ -1,0 +1,13 @@
+SubsetSum(arr, res, sum)  
+    if sum == 0  
+        return true  
+    if sum < 0  
+        return false  
+    if len(arr) == 0 and sum!= 0  
+        return false  
+    arr.pop(0)
+    if len(arr) > 0  
+        res.append(arr[0])  
+        select = SubsetSum(arr, sum-arr[0], res)  
+    reject = SubsetSum(arr, res, sum)  
+    return reject or sum  
