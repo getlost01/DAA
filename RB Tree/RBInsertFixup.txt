@@ -1,0 +1,18 @@
+RB-INSERT-FIXUP (T, z)
+  while color [p[z]] = RED
+  do if p [z] = left [p[p[z]]]
+  then y ← right [p[p[z]]]
+  If color [y] = RED
+  then color [p[z]] ← BLACK    //Case 1
+  color [y] ← BLACK            //Case 1
+  color [p[z]] ← RED           //Case 1
+  z  ← p[p[z]]                 //Case 1
+  else if z= right [p[z]]
+  then z ← p [z]              //Case 2
+  LEFT-ROTATE (T, z)          //Case 2
+  color [p[z]] ← BLACK        //Case 3
+  color [p [p[z]]] ← RED      //Case 3
+  RIGHT-ROTATE  (T,p [p[z]])  //Case 3
+  else (same as then clause)
+      With "right" and "left" exchanged
+  color [root[T]] ← BLACK

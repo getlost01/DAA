@@ -1,0 +1,18 @@
+RB-INSERT (T, z)
+  y ← nil [T]
+  x ← root [T]
+  while x ≠ NIL [T]
+  do y ← x
+  if key [z] < key [x]
+  then x  ← left [x]
+  else x ←  right [x]
+  p [z] ← y
+  if y = nil [T]
+  then root [T] ← z
+  else if key [z] < key [y]
+  then left [y] ← z
+  else right [y] ← z
+  left [z] ← nil [T]
+  right [z] ← nil [T]
+  color [z] ← RED
+  RB-INSERT-FIXUP (T, z)

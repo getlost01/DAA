@@ -1,0 +1,19 @@
+RB-DELETE (T, z)
+  if left [z] = nil [T] or right [z] = nil [T]
+  then y ← z
+  else y ← TREE-SUCCESSOR (z)
+  if left [y] ≠ nil [T]
+  then x ← left [y]
+  else x ← right [y]
+  p [x] ←  p [y]
+  if p[y] = nil [T]
+  then root [T]  ← x
+  else if y = left [p[y]]
+  then left [p[y]] ← x
+  else right [p[y]] ← x
+  if y≠ z
+  then key [z] ← key [y]
+  copy y's satellite data into z
+  if color [y] = BLACK
+  then RB-delete-FIXUP (T, x)
+  return y
