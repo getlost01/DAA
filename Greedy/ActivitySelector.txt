@@ -1,9 +1,9 @@
-Greedy-Activity-Selector(s,f)
-n = s.length
-A = {a1}
-k = 1
-for m = 2 to n
-    if s[m] >= f[k]
-        A = A U {am}
-        k = m
-return A
+GREEDY- ACTIVITY SELECTOR (s, f)
+ n ← length [s]
+ A ← {1}
+ j ← 1
+ for i ← 2 to n
+ do if si ≥ fi
+ then A ← A ∪ {i}
+ j ← i
+ return A
