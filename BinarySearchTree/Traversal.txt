@@ -1,0 +1,17 @@
+TREE-WALK (x)
+  If x ≠ NIL
+  then INORDER-TREE-WALK (left [x])
+  print key [x]
+  INORDER-TREE-WALK (right [x])
+
+PREORDER-TREE-WALK (x)
+  If x ≠ NIL
+  then print key [x]
+  PREORDER-TREE-WALK (left [x])
+  PREORDER-TREE-WALK (right [x])
+
+POSTORDER-TREE-WALK (x)
+  If x ≠ NIL
+  then POSTORDER-TREE-WALK (left [x])
+  POSTORDER-TREE-WALK (right [x])
+  print key [x]

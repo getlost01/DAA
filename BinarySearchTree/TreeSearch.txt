@@ -1,0 +1,6 @@
+TREE- SEARCH (x, k)
+  while x ≠ NIL and k ≠ key [k]
+  do if k < key [x]
+  then x ← left [x]
+  else x ← right [x]
+  return x

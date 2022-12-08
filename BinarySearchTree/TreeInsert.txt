@@ -1,0 +1,14 @@
+TREE-INSERT (T, z)
+  y ←NIL
+  x←root [T]
+  while x ≠ NIL
+  do y←x
+  if key [z]< key [x]
+  then x←left [x]
+  else x←right [x]
+  p [z]←y
+  if y = NIL
+  then root [T]←z
+  else if key [z] < key [y]
+  then left [y]←z
+

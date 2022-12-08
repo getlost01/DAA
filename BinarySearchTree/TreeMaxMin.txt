@@ -1,0 +1,10 @@
+TREE- MINIMUM (x)
+  While left [x] ≠ NIL
+  do x←left [x]
+  return x
+
+  
+TREE-MAXIMUM (x)
+  While left [x] ≠ NIL
+  do x←right [x]
+  return x

@@ -1,0 +1,8 @@
+TREE SUCCESSOR (x)
+  If right [x] ≠ NIL
+  Then return TREE-MINIMUM (right [x]))
+  y←p [x]
+  While y ≠ NIL and x = right [y]
+  do x←y
+  y←p[y]
+  return y
