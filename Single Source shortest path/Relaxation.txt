@@ -1,11 +1,10 @@
-Initialize_Single_Source(G,s)
-for each vertex V E G.V
-    v.d <- inifite
-    v.pre <- Nil
-s.d <- 0
+INITIALIZE - SINGLE - SOURCE (G, s)
+  for each vertex v ∈ V [G]
+  do d [v] ← ∞
+  π [v] ← NIL
+  d [s] ← 0
 
-
-Relax(u,v,w)
-    if v.d > u.d + w(u,v)
-        then v.d <- u.d + w(u,v)
-             v.pre <- u
+RELAX (u, v, w)
+  if d [v] > d [u] + w (u, v)
+  then d [v] ← d [u] + w (u, v)
+  π [v] ← u
