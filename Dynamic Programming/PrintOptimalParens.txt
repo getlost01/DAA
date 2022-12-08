@@ -1,7 +1,7 @@
-Print_Optimal_Parens(S,i,j)
-if i == j
-    then print "Ai"
-else print "("
-    Print_Optimal_Parens(S,i,S[i,j])
-    Print_Optimal_Parens(S,S[i,j]+1,j)
-    print ")"
+PRINT-OPTIMAL-PARENS (s, i, j)
+  if i=j
+  then print "A"
+  else print "("
+  PRINT-OPTIMAL-PARENS (s, i, s [i, j])
+  PRINT-OPTIMAL-PARENS (s, s [i, j] + 1, j)
+  print ")"

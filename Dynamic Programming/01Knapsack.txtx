@@ -1,0 +1,12 @@
+Dynamic-0-1-knapsack (v, w, n, W)   
+    for w = 0 to W 
+        do c[0, w] = 0   
+    for i = 1 to n 
+        do c[i, 0] = 0   
+    for w = 1 to W 
+        do if wi > w then   
+            if vi + c[i-1, w-wi] then   
+                c[i, w] = vi + c[i-1, w-wi]   
+            else c[i, w] = c[i-1, w]   
+                else   
+        c[i, w] = c[i-1, w]  
