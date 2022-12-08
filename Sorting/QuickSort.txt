@@ -1,0 +1,18 @@
+QUICKSORT (array A, int m, int n)   
+  if (n > m)   
+  then   
+  i ← a random index from [m,n]   
+  swap A [i] with A[m]   
+  o ← PARTITION (A, m, n)   
+  QUICKSORT (A, m, o - 1)  
+  QUICKSORT (A, o + 1, n)  
+
+PARTITION (array A, int m, int n)   
+  x ← A[m]   
+  o ← m   
+  for p ← m + 1 to n  
+  do if (A[p] < x)   
+  then o ← o + 1   
+  swap A[o] with A[p]  
+  swap A[m] with A[o]   
+  return o  

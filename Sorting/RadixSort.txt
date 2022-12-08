@@ -1,0 +1,3 @@
+RADIX-SORT (array A, int n, int d) 
+  for i ← 1 to d 
+  do stably sort A to sort array A on digit i

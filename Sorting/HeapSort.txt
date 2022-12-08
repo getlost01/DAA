@@ -1,0 +1,25 @@
+MAX-HEAPIFY (A, i)
+  l ← left [i]
+  r ← right [i]
+  if l≤ heap-size [A] and A[l] > A [i]
+  then largest ← l
+  Else largest ← i
+  If r≤ heap-size [A] and A [r] > A[largest]
+  Then largest ← r
+  If largest ≠ i
+  Then exchange A [i]    A [largest]
+  MAX-HEAPIFY (A, largest)
+
+
+BUILDHEAP (array A, int n)
+  for i ← n/2 down to 1
+  do
+  HEAPIFY (A, i, n)
+
+
+HEAP-SORT (A)
+  BUILD-MAX-HEAP (A)
+  For I ← length[A] down to Z
+  Do exchange A [1] ←→ A [i]
+  Heap-size [A] ← heap-size [A]-1
+  MAX-HEAPIFY (A,1)

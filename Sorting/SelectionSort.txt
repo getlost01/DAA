@@ -1,0 +1,8 @@
+SELECTION SORT (A)
+ k ← length [A]  
+ for j ←1 to n-1  
+ smallest ←  j  
+ for I ← j + 1 to k  
+ if A [i] < A [ smallest]  
+ then smallest ←  i  
+ exchange (A [j], A [smallest])  
